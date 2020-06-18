@@ -11,11 +11,11 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
-        </li>
         <li class="nav-item">
-          <%= link_to "Messages", "#", class: "nav-link" %>
+          <%= link_to " 📕 Lend a book ", new_book_path, class:"btn btn-sm btn-outline-dark p-2 mr-2 font-weight-bold" %>
+        </li>
+        <li class="nav-item mr-4">
+          <%= link_to " 📚 All Books ", books_path, class: "nav-link"%>
         </li>
         <li class="nav-item dropdown">
           <%= image_tag "https://kitt.lewagon.com/placeholder/users/max1721", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>

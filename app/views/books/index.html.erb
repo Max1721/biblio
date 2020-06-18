@@ -1,0 +1,19 @@
+<div class="container mt-2">
+  <div class="row justify-content-center my-4">
+    <h2> Fancy reading a new book? </h2>
+  </div>
+
+  <div class="container">
+     <div class="row">
+        <% @books.each do |book| %>
+          <div class="col-3 mb-4">
+            <%= link_to book_path(book), class: "text-decoration-none" do %>
+              <div class="card-image grow">
+                <%= book.title %>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+     </div>
+  </div>
+</div>

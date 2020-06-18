@@ -1,0 +1,32 @@
+.card-image {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: black;
+  font-size: 15px;
+  font-weight: light;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.book-show-card {
+  background: #F8F9FA;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 2px
+  rgba(0,0,0,0.1);
+  border-radius: 3px;
+}
+
+.grow {
+transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+transform: scale(1.1);
+}

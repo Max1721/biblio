@@ -1,0 +1,22 @@
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-8 d-flex flex-column">
+      <div class="book-show-card ">
+        <h1><%= @book.title %></h1>
+        <p class="text-left"><%= @book.description %></p>
+      </div>
+      <div class="book-show-card">
+        <h3>Reviews:</h3>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="book-show-card">
+        <h5><strong>⭐️ Book rating:</strong> <%= @book.rating %></h5>
+        <h5><strong>📚 Category:</strong> <%= @book.category %></h5>
+        <h5><strong>👩 Lender:</strong> <%= @book.lender.first_name %></h5>
+        <h5><strong>📌 Where to pick the book:</strong> <%= @book.address %></h5>
+      </div>
+    </div>
+  </div>
+</div>
